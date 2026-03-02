@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tropical | Modern Mexican Sweets &amp; Drinks Minneapolis</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style type="text/tailwindcss">
+        :root {
+            --fuchsia: #e44480;
+            --caramel: #ca8518;
+            --chocolate: #c49a6c;
+            --cream: #f8f4df;
+        }
+        @layer utilities {
+            .glass {
+                background: rgba(255, 255, 255, 0.4);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+            }
+            .glass-dark {
+                background: rgba(228, 68, 128, 0.05);
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(228, 68, 128, 0.2);
+            }
+            .glass-video {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(24px);
+                -webkit-backdrop-filter: blur(24px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 0 40px rgba(228, 68, 128, 0.3);
+            }
+            .neon-fuchsia-glow {
+                box-shadow: 0 0 30px rgba(228, 68, 128, 0.5);
+            }
+            .neon-glow {
+                box-shadow: 0 0 15px rgba(228, 68, 128, 0.4);
+            }
+            .caramel-glow {
+                box-shadow: 0 0 20px rgba(202, 133, 24, 0.3);
+            }
+            .wireframe-pattern {
+                background-image: linear-gradient(rgba(202, 133, 24, 0.05) 1px, transparent 1px),
+                                  linear-gradient(90deg, rgba(202, 133, 24, 0.05) 1px, transparent 1px);
+                background-size: 40px 40px;
+            }
+            .floating-3d {
+                transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+                transition: transform 0.5s ease;
+            }
+            .floating-3d:hover {
+                transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.02);
+            }
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fuchsia: '#e44480',
+                        caramel: '#ca8518',
+                        chocolate: '#c49a6c',
+                        cream: '#f8f4df',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream font-sans text-slate-900 selection:bg-fuchsia selection:text-white">
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-fuchsia/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-caramel/10 rounded-full blur-[100px]"></div>
+        <div class="absolute inset-0 wireframe-pattern opacity-40"></div>
+    </div>
+    <header class="sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto glass rounded-2xl px-8 py-3 flex items-center justify-between border-white/50">
+            <div class="flex items-center gap-2">
+                <img src="img/logo.png" alt="" class="w-40 h-10">
+            </div>
+            <nav class=" hidden md:flex items-center gap-10">
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-fuchsia transition-colors"
+                    href="#">Menu</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-fuchsia transition-colors" href="#">Our
+                    Story</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-fuchsia transition-colors"
+                    href="#">Locations</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-caramel text-white px-6 py-2.5 rounded-full font-extrabold text-sm uppercase tracking-wider caramel-glow hover:scale-105 transition-all active:scale-95">
+                    Order Now
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="relative pt-12 pb-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8 relative z-20">
+                    <div
+                        class="inline-flex items-center gap-2 bg-fuchsia/10 text-fuchsia px-4 py-2 rounded-full border border-fuchsia/20">
+                        <span class="material-symbols-outlined text-lg">bolt</span>
+                        <span class="text-xs font-black uppercase tracking-[0.2em]">Futuristic Flavors</span>
+                    </div>
+                    <h1 class="text-6xl lg:text-8xl font-black text-slate-900 leading-[0.9] tracking-tighter">
+                        SWEET <br />
+                        <span class="text-fuchsia italic">TROPICAL</span> <br />
+                        ENERGY.
+                    </h1>
+                    <p class="text-lg text-slate-600 font-medium max-w-md leading-relaxed">
+                        Experience our flagship Strawberry Cream — a cinematic explosion of flavor. Fresh, premium, and
+                        redefined for the Minneapolis soul.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <button
+                            class="bg-fuchsia text-white px-10 py-5 rounded-2xl font-black text-lg neon-glow hover:translate-y-[-2px] transition-all flex items-center gap-3">
+                            EXPLORE MENU
+                            <span class="material-symbols-outlined font-black">arrow_outward</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="relative z-10">
+                        <div
+                            class="glass-video p-3 rounded-[3rem] neon-fuchsia-glow overflow-hidden transform transition-all duration-700 hover:scale-[1.02]">
+                            <div class="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-slate-100">
+                                <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                                    <source src="vids/hero.mp4" type="video/mp4" />
+                                </video>
+                                <div class="absolute bottom-8 left-8 right-8 glass p-6 rounded-2xl border-white/40">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <p class="text-fuchsia text-[10px] font-black uppercase tracking-[0.2em]">
+                                                Flagship Product</p>
+                                            <h3 class="text-2xl font-extrabold">Strawberry Cream</h3>
+                                        </div>
+                                        <div
+                                            class="w-12 h-12 bg-fuchsia rounded-full flex items-center justify-center text-white">
+                                            <span class="material-symbols-outlined">play_arrow</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-fuchsia/20 rounded-full blur-3xl animate-pulse">
+                    </div>
+                    <div
+                        class="absolute -bottom-10 -left-10 w-40 h-40 bg-caramel/20 rounded-full blur-3xl animate-pulse">
+                    </div>
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] -z-10">
+                        <svg class="w-full h-full opacity-20 text-fuchsia" viewBox="0 0 100 100">
+                            <path d="M0,50 Q25,0 50,50 T100,50" fill="none" stroke="currentColor" stroke-width="0.5">
+                            </path>
+                            <path d="M0,60 Q25,10 50,60 T100,60" fill="none" stroke="currentColor" stroke-width="0.5">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-white/30">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <div class="max-w-lg">
+                        <h2 class="text-chocolate font-black uppercase tracking-[0.3em] text-xs mb-4">The Selection</h2>
+                        <h3 class="text-5xl font-black tracking-tighter">OUR <span
+                                class="text-fuchsia italic">DRINKS</span></h3>
+                    </div>
+                    <button class="text-fuchsia font-black flex items-center gap-2 group">
+                        VIEW ALL DELIGHTS
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-1 transition-transform">east</span>
+                    </button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="group relative">
+                        <div
+                            class="absolute inset-0 bg-caramel/10 rounded-[2.5rem] rotate-3 group-hover:rotate-0 transition-transform">
+                        </div>
+                        <div class="relative glass rounded-[2.5rem] p-6 border-white/40 overflow-hidden">
+                            <div class="h-64 rounded-3xl overflow-hidden mb-6">
+                                <img alt="Drink 1"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    src="img/chocolate-milkshake.png" />
+                            </div>
+                            <h4 class="text-2xl font-black mb-2">Chocolate Chamoyada</h4>
+                            <p class="text-slate-500 text-sm mb-6">Fruity slushy with chamoy, lime, and chili salt rim.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xl font-black text-fuchsia">$8.00</span>
+                                <button
+                                    class="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-fuchsia transition-colors">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative mt-12 md:mt-0">
+                        <div
+                            class="absolute inset-0 bg-fuchsia/10 rounded-[2.5rem] -rotate-3 group-hover:rotate-0 transition-transform">
+                        </div>
+                        <div class="relative glass rounded-[2.5rem] p-6 border-white/40 overflow-hidden">
+                            <div class="h-64 rounded-3xl overflow-hidden mb-6">
+                                <img alt="Drink 2"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    src="img/green-juice.png" />
+                            </div>
+                            <h4 class="text-2xl font-black mb-2">Neon Juice</h4>
+                            <p class="text-slate-500 text-sm mb-6">Custom drink with our secret spicy tropical
+                                vegetables.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xl font-black text-fuchsia">$12.50</span>
+                                <button
+                                    class="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-fuchsia transition-colors">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative mt-12 md:mt-0">
+                        <div
+                            class="absolute inset-0 bg-chocolate/10 rounded-[2.5rem] rotate-2 group-hover:rotate-0 transition-transform">
+                        </div>
+                        <div class="relative glass rounded-[2.5rem] p-6 border-white/40 overflow-hidden">
+                            <div class="h-64 rounded-3xl overflow-hidden mb-6">
+                                <img alt="Drink 3"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    src="img/fresa.png" />
+                            </div>
+                            <h4 class="text-2xl font-black mb-2">Agua de Fresas</h4>
+                            <p class="text-slate-500 text-sm mb-6">Strawberry water with fresh strawberries.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xl font-black text-fuchsia">$7.50</span>
+                                <button
+                                    class="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-fuchsia transition-colors">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="glass rounded-[3rem] overflow-hidden border-white/60 shadow-2xl flex flex-col lg:flex-row">
+                    <div class="p-12 lg:p-20 lg:w-1/2 space-y-8">
+                        <div>
+                            <span class="text-fuchsia font-black tracking-widest text-xs uppercase">Find Us</span>
+                            <h2 class="text-5xl font-black mt-4">MINNEAPOLIS <br /> <span
+                                    class="text-caramel italic">VIBE CHECK</span></h2>
+                        </div>
+                        <p class="text-slate-600 font-medium">Located in the heart of the city. Come experience the most
+                            high-energy sweet shop in MN.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 text-slate-800">
+                                <div class="w-10 h-10 rounded-full bg-caramel/20 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-caramel">location_on</span>
+                                </div>
+                                <span class="font-bold">789 Neon Blvd, Minneapolis, MN 55401</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-slate-800">
+                                <div class="w-10 h-10 rounded-full bg-fuchsia/20 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-fuchsia">schedule</span>
+                                </div>
+                                <span class="font-bold">Open Late: 11AM - 11PM Daily</span>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-caramel text-white w-full py-5 rounded-2xl font-black text-lg uppercase tracking-widest caramel-glow">
+                            GET DIRECTIONS
+                        </button>
+                    </div>
+                    <div class="lg:w-1/2 min-h-[400px] relative">
+                        <img alt="Map Location" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_W1eDbh5Ye4kAEs4YJCg3YP3WQoWm8X8b6iZbD_NjS1jT28Z60lAKwYErgp2u936ll20I7bi_RCY5mQ9xNjXOZnUe0soU4bFKEvkAWZasHuuGHdIH16EYKEx_UoR3eKHzxgAUT0zwP47bFKrCwx0bsUDG1dbXeDq7mBpPyk_AXJfH6ZZJ9mNVoFk7vp-dR1Gc5KYeWBX2CAoP1vJELqR5cDYsNk6u87JBOEqzJ5HmzAt2nP3TgZpHwWfMujRDRRzGIzR6r6mc7J1L" />
+                        <div class="absolute inset-0 bg-fuchsia/20 mix-blend-multiply"></div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-fuchsia rounded-full animate-ping opacity-75"></div>
+                                <div class="relative w-8 h-8 bg-fuchsia rounded-full border-4 border-white shadow-xl">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-slate-900 text-white py-20 relative">
+        <div class="absolute inset-0 wireframe-pattern opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-16">
+                <div class="col-span-1 md:col-span-2 space-y-8">
+                    <div class="flex items-center gap-2">
+                        <div class="w-12 h-12 bg-fuchsia rounded-xl flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white text-3xl">cyclone</span>
+                        </div>
+                        <span class="text-3xl font-black tracking-tighter text-white uppercase italic">Tropical</span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm leading-relaxed">The future of Mexican street sweets is here.
+                        Fresh ingredients, high energy, and bold flavors for the Minneapolis soul.</p>
+                    <div class="flex gap-6">
+                        <a class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-fuchsia hover:border-fuchsia transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                        <a class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-fuchsia hover:border-fuchsia transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm">camera</span>
+                        </a>
+                        <a class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-fuchsia hover:border-fuchsia transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm">alternate_email</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-sm font-black uppercase tracking-[0.2em] mb-8 text-fuchsia">Quick Links</h5>
+                    <ul class="space-y-4 text-slate-400 font-bold">
+                        <li><a class="hover:text-white transition-colors" href="#">Menu</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Merchandise</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Catering</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Career</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-sm font-black uppercase tracking-[0.2em] mb-8 text-caramel">Vibe Letter</h5>
+                    <p class="text-sm text-slate-400 mb-6">Drop your email for exclusive drops and late-night deals.</p>
+                    <div class="relative">
+                        <input
+                            class="bg-white/5 border-white/10 rounded-xl w-full px-4 py-3 text-sm focus:border-fuchsia focus:ring-0 transition-colors"
+                            placeholder="email@tropical.com" type="email" />
+                        <button class="absolute right-2 top-2 bottom-2 bg-fuchsia px-4 rounded-lg">
+                            <span class="material-symbols-outlined text-sm">send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-20 pt-8 border-t border-white/5 text-center text-slate-500 text-xs font-bold uppercase tracking-widest">
+                © 2024 Tropical Sweet Shop Minneapolis. Built for the Future.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
