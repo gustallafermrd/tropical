@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Story | Tropical Mexican Sweets &amp; Drinks Glencoe</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style type="text/tailwindcss">
+        :root {
+            --fuchsia: #e44480;
+            --caramel: #ca8518;
+            --chocolate: #c49a6c;
+            --cream: #f8f4df;
+        }
+        @layer utilities {
+            .glass {
+                background: rgba(255, 255, 255, 0.4);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+            }
+            .glass-card {
+                background: rgba(255, 255, 255, 0.6);
+                backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.4);
+            }
+            .neon-glow {
+                box-shadow: 0 0 15px rgba(228, 68, 128, 0.4);
+            }
+            .caramel-glow {
+                box-shadow: 0 0 20px rgba(202, 133, 24, 0.3);
+            }
+            .wireframe-pattern {
+                background-image: linear-gradient(rgba(202, 133, 24, 0.05) 1px, transparent 1px),
+                                  linear-gradient(90deg, rgba(202, 133, 24, 0.05) 1px, transparent 1px);
+                background-size: 40px 40px;
+            }
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fuchsia: '#e44480',
+                        caramel: '#ca8518',
+                        chocolate: '#c49a6c',
+                        cream: '#f8f4df',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream font-sans text-slate-900 selection:bg-fuchsia selection:text-white">
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-[-10%] left-[-5%] w-[50%] h-[50%] bg-fuchsia/5 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-caramel/5 rounded-full blur-[100px]"></div>
+        <div class="absolute inset-0 wireframe-pattern opacity-40"></div>
+    </div>
+    <header class="sticky top-0 z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto glass rounded-2xl px-8 py-3 flex items-center justify-between border-white/50">
+            <div class="flex items-center gap-2">
+                <img src="img/logo.png" alt="" class="w-40 h-10">
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-fuchsia transition-colors"
+                    href="index.html">Menu</a>
+                <a class="text-sm font-bold uppercase tracking-widest text-fuchsia underline decoration-2 underline-offset-4"
+                    href="#">Our Story</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-fuchsia transition-colors"
+                    href="#locations">Locations</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-caramel text-white px-6 py-2.5 rounded-full font-extrabold text-sm uppercase tracking-wider caramel-glow hover:scale-105 transition-all active:scale-95">
+                    Order Now
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="relative pt-12 pb-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="relative rounded-[3rem] overflow-hidden shadow-2xl aspect-[21/9]">
+                    <img alt="Founders of Tropical" class="w-full h-full object-cover" src="img/fachada.jpeg" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                    <div class="absolute bottom-12 left-12 text-white">
+                        <span class="text-caramel font-black uppercase tracking-[0.3em] text-sm block mb-4">Established
+                            2022</span>
+                        <h1 class="text-5xl lg:text-7xl font-black tracking-tighter">THE SOUL OF <br /><span
+                                class="text-fuchsia italic">GLENCOE</span></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="space-y-10">
+                    <div class="space-y-4">
+                        <h2 class="text-fuchsia text-5xl lg:text-6xl font-black tracking-tighter leading-tight">
+                            A Young Vision with <br />Mexican Soul.
+                        </h2>
+                        <div class="w-24 h-2 bg-caramel rounded-full"></div>
+                    </div>
+                    <div class="space-y-6 text-slate-600 text-lg font-medium leading-relaxed">
+                        <p>
+                            Tropical was born from the dream of a young Latino couple who wanted to bring a piece of
+                            their heritage to Glencoe, Minnesota. What started as a shared passion for authentic Mexican
+                            flavors quickly evolved into a modern cafeteria that bridges tradition with a futuristic
+                            aesthetic.
+                        </p>
+                        <p>
+                            In our vibrant Glencoe cafe, we've created a space where the warmth of Mexican hospitality
+                            meets a sleek, modern energy. Every drink we serve and every sweet treat we craft is a
+                            testament to our roots, reimagined for the modern palate.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <button
+                            class="bg-caramel text-white px-10 py-5 rounded-2xl font-black text-lg caramel-glow hover:translate-y-[-2px] transition-all flex items-center gap-3">
+                            SEE OUR MENU
+                            <span class="material-symbols-outlined font-black">restaurant_menu</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="glass-card p-4 rounded-[3rem] transform rotate-3 relative z-10">
+                        <img alt="Interior of the cafe" class="rounded-[2.5rem] shadow-lg w-full h-[600px] object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5unf-xyMjKrVI7k3GcU7wKuRCVm1NLFTEAfSLhBMDM57wIr0sns5Nxjmy7ZkfdXV-AHD-43srb-7hzo8LZYzxBhV4QmYE_sBYwQaI8z5mbLv9RZS6asOL2jWmYTiX94D9R3VqbZP5v11P0J69SGH5FF__97JyfiBQ11ErUtcv1PXwYTxMXJDcL7_brVWan55PeHeZYfV8QDwBHIGUY7-lYnRcEM86aJoiTuTlQ_8ipX1zzkcjgjyEoEfPK_0TMaL43W0MlpoHRjhI" />
+                    </div>
+                    <div class="absolute -top-10 -right-10 w-64 h-64 bg-fuchsia/10 rounded-full blur-3xl -z-10"></div>
+                    <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-caramel/10 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-fuchsia/5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="glass p-10 rounded-3xl space-y-4">
+                        <span class="material-symbols-outlined text-fuchsia text-4xl">favorite</span>
+                        <h3 class="text-2xl font-black text-slate-900">Authentic Roots</h3>
+                        <p class="text-slate-600">Recipes passed down through generations, prepared with modern
+                            precision.</p>
+                    </div>
+                    <div class="glass p-10 rounded-3xl space-y-4">
+                        <span class="material-symbols-outlined text-caramel text-4xl">communities</span>
+                        <h3 class="text-2xl font-black text-slate-900">Glencoe Heart</h3>
+                        <p class="text-slate-600">Proudly serving the local community and creating a space for everyone.
+                        </p>
+                    </div>
+                    <div class="glass p-10 rounded-3xl space-y-4">
+                        <span class="material-symbols-outlined text-fuchsia text-4xl">bolt</span>
+                        <h3 class="text-2xl font-black text-slate-900">Modern Twist</h3>
+                        <p class="text-slate-600">A futuristic take on classic Mexican street sweets and vibrant drinks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 relative overflow-hidden" id="locations">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="glass rounded-[3rem] overflow-hidden border-white/60 shadow-2xl flex flex-col lg:flex-row">
+                    <div class="p-12 lg:p-20 lg:w-1/2 space-y-8">
+                        <div>
+                            <span class="text-fuchsia font-black tracking-widest text-xs uppercase">Visit Us</span>
+                            <h2 class="text-5xl font-black mt-4">FIND US IN <br /> <span
+                                    class="text-caramel italic">GLENCOE</span></h2>
+                        </div>
+                        <p class="text-slate-600 font-medium leading-relaxed">Experience the vibe in person. Our shop is
+                            designed to be your home away from home, filled with color, energy, and flavor.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4 text-slate-800">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-caramel/10 flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-caramel">location_on</span>
+                                </div>
+                                <div>
+                                    <p class="font-black text-lg">714 13th St E</p>
+                                    <p class="text-slate-500 font-bold uppercase text-sm">Glencoe, MN 55336</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 text-slate-800">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-fuchsia/10 flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-fuchsia">schedule</span>
+                                </div>
+                                <div>
+                                    <p class="font-black text-lg">Daily Service</p>
+                                    <p class="text-slate-500 font-bold uppercase text-sm">11AM - 10PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-slate-900 text-white w-full py-5 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-fuchsia transition-all">
+                            GET DIRECTIONS
+                        </button>
+                    </div>
+                    <div class="lg:w-1/2 min-h-[500px] relative bg-slate-200">
+                        <img alt="Map Location" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_W1eDbh5Ye4kAEs4YJCg3YP3WQoWm8X8b6iZbD_NjS1jT28Z60lAKwYErgp2u936ll20I7bi_RCY5mQ9xNjXOZnUe0soU4bFKEvkAWZasHuuGHdIH16EYKEx_UoR3eKHzxgAUT0zwP47bFKrCwx0bsUDG1dbXeDq7mBpPyk_AXJfH6ZZJ9mNVoFk7vp-dR1Gc5KYeWBX2CAoP1vJELqR5cDYsNk6u87JBOEqzJ5HmzAt2nP3TgZpHwWfMujRDRRzGIzR6r6mc7J1L" />
+                        <div class="absolute inset-0 bg-fuchsia/10 mix-blend-multiply"></div>
+                        <div class="absolute inset-0 wireframe-pattern opacity-20"></div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-fuchsia rounded-full animate-ping opacity-75"></div>
+                                <div
+                                    class="relative w-12 h-12 bg-fuchsia rounded-full border-4 border-white shadow-2xl flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-white">location_on</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-slate-900 text-white py-20 relative">
+        <div class="absolute inset-0 wireframe-pattern opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-16">
+                <div class="col-span-1 md:col-span-2 space-y-8">
+                    <div class="flex items-center gap-2">
+                        <div class="flex items-center gap-2">
+                            <img src="img/logo.png" alt="" class="w-40 h-10">
+                        </div>
+                    </div>
+                    <p class="text-slate-400 max-w-sm leading-relaxed">A modern Mexican sweet shop founded by a young
+                        couple with a vision for flavor and community in Glencoe, MN.</p>
+                    <div class="flex gap-6">
+                        <a class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-fuchsia hover:border-fuchsia transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                        <a class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-fuchsia hover:border-fuchsia transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm">camera</span>
+                        </a>
+                        <a class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-fuchsia hover:border-fuchsia transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-sm">alternate_email</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-sm font-black uppercase tracking-[0.2em] mb-8 text-fuchsia">Navigation</h5>
+                    <ul class="space-y-4 text-slate-400 font-bold">
+                        <li><a class="hover:text-white transition-colors" href="#">Menu</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Our Story</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-sm font-black uppercase tracking-[0.2em] mb-8 text-caramel">Connect</h5>
+                    <p class="text-sm text-slate-400 mb-6">Stay updated with our latest sweet creations and events in
+                        Glencoe.</p>
+                    <div class="relative">
+                        <input
+                            class="bg-white/5 border-white/10 rounded-xl w-full px-4 py-3 text-sm focus:border-fuchsia focus:ring-0 transition-colors"
+                            placeholder="hello@tropicalglencoe.com" type="email" />
+                        <button class="absolute right-2 top-2 bottom-2 bg-fuchsia px-4 rounded-lg">
+                            <span class="material-symbols-outlined text-sm">send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-20 pt-8 border-t border-white/5 text-center text-slate-500 text-xs font-bold uppercase tracking-widest">
+                © 2024 Tropical Sweet Shop Glencoe. Mexican Soul, Modern Spirit.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
